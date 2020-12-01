@@ -1,3 +1,68 @@
 *{
-    background-color:black;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page{
+    display:flex;
+    flex-direction:column;
+}
+
+a{
+    color: #222;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+.logo{
+    display:block;
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+.search-logo{
+    display:block;
+    width: 24px;
+    height: 24px;
+}
+
+.left-menu a{
+    display:block;
+    float:left;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+.right-menu a{
+    float:right;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+.search:before{
+    content:"";
+    position:absolute;
+    background-image: url("data:image/svg+xml,%3Csvg class='search-logo' focusable='false' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' style='width: 24px; height: 24px;'%3E%3Cpath d='M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'%3E%3C/path%3E%3C/svg%3E");
+    width: 24px;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    
+}
+
+.search{
+    padding: 10px 30px;
+    border-radius: 10px;
 }
