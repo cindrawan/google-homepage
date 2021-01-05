@@ -21,21 +21,31 @@
         </header>
         <main>
             <div class="main">
-                <img src="images/google-logo.png" alt="Google Logo" class="logo"/>
-                <form>
-                    <input type="text" tabindex="1" class="search" style="display:block;">
-                    <svg class="search-logo" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-                    </svg>
-                    <input type="button" value="Google Search" style="width: auto;">
-                    <input type="button" value="I'm Feeling Lucky" style="width: auto;"> 
+                <div style="margin-top: -300px;padding-bottom: 50px;">
+                    <img src="images/google-logo.png" alt="Google Logo" class="logo"/>
+                </div>
+                <form class="search-form">
+                    <div class="search-bar search-input">
+                            <div style="padding-right:13px;">
+                                <span class="search-logo">
+                                    <svg class="search-logo" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path class="search-logo" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <input type="text" tabindex="1" class="search" style="display:block;">
+                    </div>
+                    <div class="search-button sb">
+                        <input type="submit" value="Google Search" style="width: auto;">
+                        <input type="submit" value="I'm Feeling Lucky" style="width: auto;"> 
+                    </div>    
                 </form>
-                <p>Google offered in: <a href="#">Français</a></p>
+                <p class="francais">Google offered in: <a href="#">Français</a></p>
             </div>
         </main>
         <footer>
             <div class="bottom-menu menu">
-                <span class="origin">Canada</span>
+                <span class="canada">Canada</span>
                 <div style="border-top: 1px solid #dadce0; line-height: 40px;">
                         <ul class="left-menu">
                             <li><a href="#">Advertising</a></li>
